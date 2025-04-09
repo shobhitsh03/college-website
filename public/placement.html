@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Placements | Delhi Technical Campus</title>
+  <style>
+    :root {
+      --navy: #123458;
+      --cream: #D4C9BE;
+      --white: #ffffff;
+      --light: #f9f9f9;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: var(--white);
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--navy);
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    }
+
+    header h1 {
+      font-size: 2rem;
+    }
+
+    .container {
+      padding: 2rem 3rem;
+    }
+
+    section {
+      margin-bottom: 2.5rem;
+      background-color: var(--light);
+      padding: 2rem;
+      border-left: 6px solid var(--navy);
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      animation: fadeIn 1s ease forwards;
+    }
+
+    section h2 {
+      color: var(--navy);
+      margin-bottom: 1rem;
+    }
+
+    .recruiters-logos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+
+    .recruiters-logos img {
+      width: 100px;
+      height: auto;
+      transition: transform 0.3s;
+    }
+
+    .recruiters-logos img:hover {
+      transform: scale(1.1);
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .stat-card {
+      background-color: var(--white);
+      padding: 1rem;
+      border-radius: 6px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .stat-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .testimonial {
+      background-color: var(--cream);
+      border-left: 5px solid var(--navy);
+      padding: 1rem;
+      margin-top: 1rem;
+      border-radius: 5px;
+    }
+
+    .cta {
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .cta a {
+      padding: 0.7rem 1.5rem;
+      background-color: var(--navy);
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    .cta a:hover {
+      background-color: #0f2f45;
+    }
+
+    footer {
+      background-color: var(--navy);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 1rem;
+      }
+
+      .recruiters-logos img {
+        width: 80px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Placement Cell</h1>
+    <p>Delhi Technical Campus, Greater Noida</p>
+  </header>
+
+  <div class="container">
+
+    <section>
+      <h2>About the Placement Cell</h2>
+      <p>
+        The Placement Cell of Delhi Technical Campus works relentlessly to connect our students with top companies across the globe. Our goal is to ensure every eligible student gets a platform to showcase their skills and secure excellent job offers. With industry collaborations, soft skill training, mock interviews, and internship support, we prepare students for success.
+      </p>
+    </section>
+
+    <section>
+      <h2>Our Recruiters</h2>
+      <div class="recruiters-logos">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/TCS_NQT_Logo.png" alt="TCS">
+        <img src="https://1000logos.net/wp-content/uploads/2021/05/Cognizant-logo.png" alt="Cognizant">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/76/Infosys_logo.svg" alt="Infosys">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Capgemini_201x_logo.svg" alt="Capgemini">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Accenture_Logo.svg" alt="Accenture">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Wipro_Logo.svg" alt="Wipro">
+      </div>
+    </section>
+
+    <section>
+      <h2>Placement Stats (2023-24)</h2>
+      <div class="stats">
+        <div class="stat-card">
+          <h3>90%+</h3>
+          <p>Placement Rate</p>
+        </div>
+        <div class="stat-card">
+          <h3>120+</h3>
+          <p>Companies Visited</p>
+        </div>
+        <div class="stat-card">
+          <h3>₹12 LPA</h3>
+          <p>Highest Package</p>
+        </div>
+        <div class="stat-card">
+          <h3>₹4.2 LPA</h3>
+          <p>Average Package</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Student Testimonials</h2>
+      <div class="testimonial">
+        <strong>Student A (CSE, 2023):</strong> “Thanks to the placement cell’s continuous support, I landed my dream job at a reputed IT firm. The mock interviews and coding prep sessions were game changers!”
+      </div>
+      <div class="testimonial">
+        <strong>Student B (ECE, 2022):</strong> “From resume reviews to aptitude tests, the training was thorough. I’m grateful to DTC for giving me the right exposure.”
+      </div>
+    </section>
+
+    <section class="cta">
+      <h2>Need Help or Want to Join Placement Drive?</h2>
+      <p>Reach out to our Placement Officer or visit the Placement Cell Office.</p>
+      <a href="mailto:placement@delhitechnicalcampus.ac.in">Contact Us</a>
+    </section>
+
+  </div>
+
+  <footer>
+    &copy; 2025 Delhi Technical Campus | Training & Placement Cell
+  </footer>
+
+</body>
+</html>

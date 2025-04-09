@@ -1,0 +1,429 @@
+
+
+@media (max-width: 1024px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+        height: auto;
+    }
+
+    .nav-email, .nav-phone {
+        width: 100%;
+        font-size: 0.75rem;
+    }
+
+    .navbar-ops {
+        width: 100%;
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-panel1 {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+    }
+
+    .heading {
+        width: 100%;
+        margin-top: 10px;
+        font-size: 1.2rem;
+    }
+
+    .nav-panel2 {
+        height: auto;
+    }
+
+    .panel2-content {
+        flex-wrap: wrap;
+        padding: 10px 0;
+        gap: 10px;
+    }
+
+    .Home {
+        padding: 10px 15px;
+    }
+
+    .content {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .box {
+        width: 90%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .box-img {
+        margin: 0 auto;
+        display: block;
+    }
+
+    .box iframe {
+        margin: 0 auto;
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .location {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .Aboutus {
+        padding: 20px;
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .map iframe {
+        width: 90%;
+        height: 250px;
+    }
+
+    .foot-panel1 {
+        flex-direction: column;
+        height: auto;
+        padding: 30px 10px;
+        gap: 20px;
+        align-items: flex-start;
+    }
+
+    .logo1 {
+        margin: 0 auto;
+    }
+
+    .links {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .imp-links ul {
+        padding-left: 0;
+    }
+
+    .imp-links, .About-DTC {
+        width: 100%;
+    }
+
+    ul a {
+        margin: 8px 0;
+    }
+
+    .foot-panel2 {
+        font-size: 0.8rem;
+        text-align: center;
+        padding: 10px;
+        height: auto;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .welcome h2 {
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+
+    .heading {
+        font-size: 1rem;
+    }
+
+    .panel2-content a {
+        font-size: 0.8rem;
+        padding: 6px 10px;
+    }
+
+    .box iframe {
+        aspect-ratio: 16 / 9;
+    }
+}
+/* ========== GLOBAL RESET ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background-color: #030303;
+    color: #F1EFEC;
+  }
+  
+  /* ========== SHARED UTILITY CLASSES ========== */
+  .shadow {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+  }
+  
+  /* ========== NAVBAR SECTION ========== */
+  .navbar {
+    background-color: #123458;
+    color: #F1EFEC;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  }
+  
+  .navbar div,
+  .navbar a {
+    margin: 5px 10px;
+    font-size: 0.9rem;
+  }
+  
+  .navbar-ops a {
+    background-color: #D4C9BE;
+    color: #123458;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 10px;
+  }
+  
+  .navbar-ops a:hover {
+    background-color: #F1EFEC;
+  }
+  
+  /* ========== HEADER SECTION ========== */
+  .nav-panel1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #D4C9BE;
+    padding: 1rem;
+    gap: 1rem;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  }
+  
+  .logo,
+  .NBA-logo,
+  .TOI-ranking {
+    height: 100px;
+    width: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  .heading {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 2rem;
+    color: #123458;
+  }
+  
+  /* ========== NAVIGATION PANEL 2 ========== */
+  .nav-panel2 {
+    background-color: #123458;
+    color: #F1EFEC;
+    padding: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  }
+  
+  .panel2-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    text-transform: uppercase;
+  }
+  
+  .panel2-content a {
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: #030303;
+    color: #F1EFEC;
+    transition: 0.3s;
+  }
+  .panel2-content a:hover {
+    background-color: #D4C9BE;
+    color: #123458;
+  }
+  
+  /* ========== MAIN WELCOME SECTION ========== */
+  .main-page {
+    display: grid;
+    place-items: center;
+    background-image: url('CollImages/dtc.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    margin: 20px 0;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  }
+  
+  .welcome h2 {
+    background-color: rgba(212, 201, 190, 0.9);
+    padding: 20px;
+    color: #123458;
+    font-size: 2rem;
+    border-radius: 12px;
+  }
+  
+  /* ========== CONTENT BOXES ========== */
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    background-color: #030303;
+  }
+  
+  .box {
+    background-color: #D4C9BE;
+    color: #123458;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    min-height: 350px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+  }
+  
+  .box h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .box-img {
+    display: block;
+    margin: 0 auto 1rem;
+    border-radius: 10px;
+    max-width: 100%;
+  }
+  
+  /* ========== LOCATION SECTION ========== */
+  .location {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #123458;
+    padding: 2rem 1rem;
+    gap: 2rem;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+  }
+  
+  .Aboutus {
+    background-color: #D4C9BE;
+    color: #123458;
+    padding: 1rem;
+    border-radius: 12px;
+    min-width: 280px;
+    max-width: 400px;
+  }
+  
+  .Aboutus h3 {
+    border-bottom: 2px solid #123458;
+    margin-bottom: 1rem;
+  }
+  
+  .map iframe {
+    border-radius: 12px;
+    width: 100%;
+    max-width: 400px;
+    height: 300px;
+  }
+  
+  /* ========== FOOTER ========== */
+  footer {
+    background-color: #030303;
+    color: #F1EFEC;
+    padding-top: 2rem;
+  }
+  
+  .foot-panel1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  .About-DTC,
+  .imp-links {
+    max-width: 300px;
+  }
+  
+  .logo1 {
+    height: 150px;
+    width: 150px;
+    background-image: url('CollImages/dtclogo.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 1rem auto;
+  }
+  
+  .links i {
+    font-size: 1.5rem;
+    margin: 0.5rem;
+    color: #F1EFEC;
+  }
+  .links i:hover {
+    color: #D4C9BE;
+  }
+  
+  .foot-heading {
+    border-bottom: 2px solid #F1EFEC;
+    margin-bottom: 1rem;
+    padding-bottom: 5px;
+  }
+  
+  ul a {
+    color: #ccc;
+    font-size: 0.9rem;
+    display: block;
+    margin: 8px 0;
+  }
+  ul a:hover {
+    color: #fff;
+  }
+  
+  .foot-panel2 {
+    background-color: #123458;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .foot-panel2 a {
+    color: #D4C9BE;
+  }
+  @keyframes jump {
+    0%   { transform: translateY(0); }
+    30%  { transform: translateY(-10px); }
+    50%  { transform: translateY(0); }
+    70%  { transform: translateY(-6px); }
+    100% { transform: translateY(0); }
+  }
+  .links a i {
+    font-size: 1.6rem;
+    margin: 0.5rem;
+    color: #F1EFEC;
+    transition: transform 0.3s ease;
+  }
+  
+  .links a:hover i {
+    animation: jump 0.6s ease;
+    color: #D4C9BE;
+  }

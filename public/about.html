@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - Delhi Technical Campus</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+  <style>
+    :root {
+      --black: #030303;
+      --navy: #123458;
+      --cream: #D4C9BE;
+      --offwhite: #F1EFEC;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: var(--offwhite);
+      color: var(--black);
+      line-height: 1.6;
+    }
+
+    .header-section {
+      background-color: var(--navy);
+      color: var(--offwhite);
+      text-align: center;
+      padding: 2rem 1rem;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .section-box {
+      background-color: white;
+      border-radius: 12px;
+      padding: 2rem;
+      margin: 2rem auto;
+      width: 90%;
+      max-width: 1000px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .intro h2 {
+      color: var(--navy);
+      margin-bottom: 1rem;
+    }
+
+    .leadership {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .lead-content {
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .reverse {
+      flex-direction: row-reverse;
+    }
+
+    .lead-img img {
+      width: 200px;
+      height: auto;
+      border-radius: 10px;
+      border: 3px solid var(--cream);
+    }
+
+    .lead-text h2 {
+      color: var(--navy);
+      margin-bottom: 0.5rem;
+    }
+
+    .lead-text h4 {
+      margin-top: 1rem;
+      font-weight: bold;
+      color: var(--cream);
+    }
+
+    .footer-section {
+      background-color: var(--navy);
+      color: var(--offwhite);
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    .social-icons a {
+      margin: 0 0.5rem;
+      color: var(--cream);
+      font-size: 1.4rem;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .social-icons a:hover {
+      animation: jump 0.5s ease;
+      color: var(--offwhite);
+    }
+
+    @keyframes jump {
+      0%   { transform: translateY(0); }
+      30%  { transform: translateY(-10px); }
+      50%  { transform: translateY(0); }
+      70%  { transform: translateY(-6px); }
+      100% { transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      .lead-content {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .lead-img img {
+        width: 150px;
+      }
+
+      .section-box {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header-section">
+    <h1>About Delhi Technical Campus</h1>
+    <p>Greater Noida</p>
+  </header>
+
+  <main class="main-container">
+    <section class="intro section-box">
+      <h2>Who We Are</h2>
+      <p>
+        Delhi Technical Campus, Greater Noida is committed to academic excellence and the holistic development of its students. Our mission is to prepare future leaders through innovation, knowledge, and integrity. 
+      </p>
+    </section>
+
+    <section class="leadership section-box">
+      <div class="lead-content">
+        <div class="lead-img">
+          <img src="CollImages/director.jpg" alt="Director" />
+        </div>
+        <div class="lead-text">
+          <h2>Message from the Director</h2>
+          <p>
+            “At Delhi Technical Campus, we believe in nurturing young minds to become industry-ready professionals. Our focus is not only on academics, but also on building character and ethical values.”
+          </p>
+          <h4>Prof.KK Singh</h4>
+        </div>
+      </div>
+    </section>
+
+    <section class="leadership section-box">
+      <div class="lead-content reverse">
+        <div class="lead-img">
+          <img src="CollImages/dean.jpg" alt="Dean" />
+        </div>
+        <div class="lead-text">
+          <h2>Message from the Dean</h2>
+          <p>
+            “Delhi Technical Campus stands for excellence in education and research. We encourage students to think critically and develop creative solutions for real-world challenges.”
+          </p>
+          <h4>Prof. Piyush Yadav</h4>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-section">
+    <p>&copy; 2025 Delhi Technical Campus, Greater Noida | All Rights Reserved.</p>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Research Department – Delhi Technical Campus</title>
+  <style>
+    :root {
+      --navy: #123458;
+      --cream: #D4C9BE;
+      --offwhite: #F1EFEC;
+      --white: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: var(--white);
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--navy);
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    header h1 {
+      font-size: 2rem;
+    }
+
+    .container {
+      padding: 2rem 3rem;
+      animation: fadeIn 1s ease-in;
+    }
+
+    section {
+      margin-bottom: 2.5rem;
+      padding: 1.5rem;
+      background-color: var(--offwhite);
+      border-left: 5px solid var(--navy);
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      animation: slideUp 1s ease-in;
+    }
+
+    section h2 {
+      color: var(--navy);
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    footer {
+      background-color: var(--navy);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      margin-top: 2rem;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: scale(0.97); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+
+    @keyframes slideUp {
+      0% { transform: translateY(30px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Research Department – Delhi Technical Campus</h1>
+  </header>
+
+  <div class="container">
+
+    <section>
+      <h2>About the Research Department</h2>
+      <p>
+        The Research Department at Delhi Technical Campus plays a pivotal role in fostering a culture of innovation, critical thinking, and academic inquiry. We aim to promote interdisciplinary research and provide a platform for students and faculty to engage in cutting-edge developments across various domains.
+      </p>
+    </section>
+
+    <section>
+      <h2>Objectives</h2>
+      <ul>
+        <li>To encourage a strong research culture among faculty and students.</li>
+        <li>To collaborate with industries and other academic institutions for joint research projects.</li>
+        <li>To publish high-quality research papers and file patents.</li>
+        <li>To conduct seminars, workshops, and conferences on emerging technologies.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Areas of Research</h2>
+      <ul>
+        <li>Artificial Intelligence & Machine Learning</li>
+        <li>Data Science & Big Data Analytics</li>
+        <li>Sustainable Architecture and Design</li>
+        <li>Internet of Things (IoT)</li>
+        <li>Renewable Energy & Environmental Engineering</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Collaborations</h2>
+      <p>
+        The department has tie-ups and collaborations with reputed institutions and industries like IIT Delhi, DRDO, TCS, and Microsoft Innovation Center for various research initiatives.
+      </p>
+    </section>
+
+    <section>
+      <h2>Recent Achievements</h2>
+      <ul>
+        <li>Over 50+ publications in reputed national and international journals in the past year.</li>
+        <li>Secured research grants from AICTE and DST.</li>
+        <li>Faculty filed multiple patents in the domains of AI, Robotics, and Architecture.</li>
+      </ul>
+    </section>
+
+  </div>
+
+  <footer>
+    &copy; 2025 Delhi Technical Campus, Greater Noida | Research Department
+  </footer>
+
+</body>
+</html>

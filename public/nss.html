@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NSS – Delhi Technical Campus</title>
+  <style>
+    :root {
+      --navy: #123458;
+      --cream: #D4C9BE;
+      --offwhite: #F1EFEC;
+      --white: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: var(--white);
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--navy);
+      color: white;
+      padding: 1.5rem 2rem;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+    }
+
+    .container {
+      padding: 2rem 3rem;
+      animation: fadeIn 1s ease-in;
+    }
+
+    section {
+      margin-bottom: 2.5rem;
+      padding: 1.5rem;
+      background-color: var(--offwhite);
+      border-left: 6px solid var(--navy);
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      animation: slideUp 1s ease-in;
+    }
+
+    section h2 {
+      color: var(--navy);
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    footer {
+      background-color: var(--navy);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      margin-top: 2rem;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: scale(0.97); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+
+    @keyframes slideUp {
+      0% { transform: translateY(30px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>NSS – National Service Scheme</h1>
+    <p>Delhi Technical Campus, Greater Noida</p>
+  </header>
+
+  <div class="container">
+
+    <section>
+      <h2>About NSS at DTC</h2>
+      <p>
+        The National Service Scheme (NSS) unit at Delhi Technical Campus aims to foster a sense of social responsibility, discipline, and service among students. Through active participation in community service and outreach, students develop leadership qualities and a spirit of volunteerism.
+      </p>
+    </section>
+
+    <section>
+      <h2>Objectives</h2>
+      <ul>
+        <li>Develop a sense of social and civic responsibility among students.</li>
+        <li>Promote community service and outreach activities.</li>
+        <li>Enhance leadership and teamwork abilities.</li>
+        <li>Create awareness about health, hygiene, and the environment.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Key Activities</h2>
+      <ul>
+        <li>Blood donation camps</li>
+        <li>Tree plantation drives</li>
+        <li>Cleanliness and Swachh Bharat campaigns</li>
+        <li>Road safety awareness drives</li>
+        <li>Health check-up camps</li>
+        <li>Workshops and seminars on social issues</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Recent Achievements</h2>
+      <ul>
+        <li>Over 300+ volunteers actively participated in Swachhta Abhiyan 2024.</li>
+        <li>Successfully conducted health awareness camps in rural areas.</li>
+        <li>NSS volunteers collaborated with NGOs for social campaigns.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>How to Join NSS?</h2>
+      <p>
+        Students interested in community service and personal development are welcome to join the NSS unit. Registrations open at the start of each academic session. Interested students can contact the NSS Programme Officer or visit the Student Affairs office for more details.
+      </p>
+    </section>
+
+  </div>
+
+  <footer>
+    &copy; 2025 Delhi Technical Campus | NSS Department
+  </footer>
+
+</body>
+</html>

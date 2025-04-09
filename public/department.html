@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Departments | Delhi Technical Campus</title>
+  <style>
+    :root {
+      --black: #030303;
+      --navy: #123458;
+      --cream: #D4C9BE;
+      --offwhite: #F1EFEC;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: var(--offwhite);
+      color: var(--black);
+    }
+
+    header {
+      background-color: var(--navy);
+      color: var(--cream);
+      padding: 2rem 1rem;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .dept-section {
+      padding: 2rem 1rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .dept-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .dept-card {
+      background-color: white;
+      border-radius: 10px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .dept-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .dept-card h2 {
+      color: var(--navy);
+      margin-bottom: 1rem;
+      font-size: 1.4rem;
+    }
+
+    .dept-card p {
+      color: var(--black);
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    footer {
+      background-color: var(--navy);
+      color: var(--offwhite);
+      padding: 1rem;
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.6rem;
+      }
+
+      .dept-card {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Departments at Delhi Technical Campus</h1>
+    <p>Greater Noida</p>
+  </header>
+
+  <section class="dept-section">
+    <div class="dept-grid">
+
+      <div class="dept-card">
+        <h2>B.Tech (Bachelor of Technology)</h2>
+        <p>
+          The B.Tech program is the flagship engineering course at DTC, offering cutting-edge knowledge in CSE, AI, ML, Data Science, and more. With modern labs, experienced faculty, and strong industry collaborations, the program prepares students for both technical careers and innovation-driven entrepreneurship.
+        </p>
+      </div>
+
+      <div class="dept-card">
+        <h2>BCA (Bachelor of Computer Applications)</h2>
+        <p>
+          The BCA program focuses on the fundamentals of programming, databases, web development, and software engineering. It’s ideal for students looking to build careers in software development, IT services, or further specialize in areas like app development and cybersecurity.
+        </p>
+      </div>
+
+      <div class="dept-card">
+        <h2>B.Arch (Bachelor of Architecture)</h2>
+        <p>
+          The B.Arch department nurtures creativity and critical thinking in the field of architecture and design. Students engage with real-world design challenges, sustainable practices, and architectural software to prepare for a career in architecture and urban planning.
+        </p>
+      </div>
+
+      <div class="dept-card">
+        <h2>B.Com (Bachelor of Commerce)</h2>
+        <p>
+          The B.Com program covers core areas like accounting, finance, business law, and taxation. It’s a great foundation for careers in banking, commerce, auditing, or preparing for competitive exams like CA, CS, and MBA.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Delhi Technical Campus, Greater Noida | All Rights Reserved.
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>E-Cell – Delhi Technical Campus</title>
+  <style>
+    :root {
+      --navy: #123458;
+      --cream: #D4C9BE;
+      --offwhite: #F1EFEC;
+      --white: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: var(--white);
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--navy);
+      color: white;
+      padding: 1.5rem 2rem;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+    }
+
+    .container {
+      padding: 2rem 3rem;
+      animation: fadeIn 1s ease-in;
+    }
+
+    section {
+      margin-bottom: 2.5rem;
+      padding: 1.5rem;
+      background-color: var(--offwhite);
+      border-left: 6px solid var(--navy);
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      animation: slideUp 1s ease-in;
+    }
+
+    section h2 {
+      color: var(--navy);
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    footer {
+      background-color: var(--navy);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      margin-top: 2rem;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: scale(0.97); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+
+    @keyframes slideUp {
+      0% { transform: translateY(30px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Entrepreneurship Cell (E-Cell)</h1>
+    <p>Delhi Technical Campus, Greater Noida</p>
+  </header>
+
+  <div class="container">
+
+    <section>
+      <h2>About E-Cell</h2>
+      <p>
+        The Entrepreneurship Cell (E-Cell) at Delhi Technical Campus is a dynamic platform that nurtures entrepreneurial spirit and innovation among students. It aims to create a thriving startup ecosystem by providing mentorship, guidance, and resources to aspiring student entrepreneurs.
+      </p>
+    </section>
+
+    <section>
+      <h2>Vision & Mission</h2>
+      <ul>
+        <li><strong>Vision:</strong> To ignite the flame of entrepreneurship and innovation in every student.</li>
+        <li><strong>Mission:</strong> Empower students with entrepreneurial knowledge, mentorship, and real-world exposure to build scalable startups and drive social impact.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Activities & Workshops</h2>
+      <ul>
+        <li>Startup Bootcamps and Ideation Hackathons</li>
+        <li>Guest talks by industry leaders and successful founders</li>
+        <li>Pitching competitions and Business Plan contests</li>
+        <li>Workshops on Design Thinking, MVP building, and Product-Market Fit</li>
+        <li>Investor Meetups and Demo Days</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Our Achievements</h2>
+      <ul>
+        <li>20+ startups incubated through E-Cell student community</li>
+        <li>Winners of Inter-college Entrepreneurship Challenge 2023</li>
+        <li>Collaborations with leading incubators and accelerators</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>How to Join E-Cell?</h2>
+      <p>
+        Passionate about startups? Want to build your own venture? Join the E-Cell by filling out the online application form available on the DTC student portal. Regular recruitment drives are conducted at the beginning of each semester.
+      </p>
+      <p>
+        You can also follow us on our <a href="#">Instagram</a> and <a href="#">LinkedIn</a> pages for latest updates.
+      </p>
+    </section>
+
+  </div>
+
+  <footer>
+    &copy; 2025 Delhi Technical Campus | E-Cell Initiative
+  </footer>
+
+</body>
+</html>
