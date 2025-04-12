@@ -122,3 +122,13 @@ app.post("/submit", async (req, res) => {
     res.status(500).json({ message: "Failed to save data." });
   }
 });
+
+//route to see the database collections
+app.get("/records", async (req, res) => {
+  try {
+    const records = await FormData.find().sort({ createdAt: -1 });
+    res.json(records);
+  } catch (err) {
+    res.status(500).json({ message: "Failed to fetch records." });
+  }
+});
